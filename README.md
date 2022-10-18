@@ -1,4 +1,6 @@
 # Source code of custom slider
+```![изображение](https://user-images.githubusercontent.com/54285416/196420452-21fddc89-d72f-4903-93dc-c78062174cdd.png)
+
 
 ## Available Scripts
 ## Содержание
@@ -40,7 +42,6 @@ This element was made to solve problems in various projects.
 
    ```bash
    npm install
-   ```
 
 ## <a name='run'></a>Application launch
 
