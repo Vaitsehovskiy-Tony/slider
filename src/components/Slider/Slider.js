@@ -5,6 +5,7 @@ export default function Slider({ slides }) {
   const direction = useRef("normal");
   const [secondSlideIndex, setSecondSlideIndex] = useState(0);
   const [firstSlideIndex, setFirstSlideIndex] = useState(slides.length - 1);
+  const [paused, setPaused] = useState(false);
 
   const currentSlides = [slides[firstSlideIndex], slides[secondSlideIndex]];
 
@@ -16,6 +17,11 @@ export default function Slider({ slides }) {
     setSecondSlideIndex(nextSlideIndex);
   }
 
+  const swipeHanlers = useSwipeable({
+    onSwipedLeft: () => nextSlide(),
+    onSwipedRight: () => previousSlide(),
+  });
+
   const previousSlide = () => {
     direction.current = "reverse";
     const nextSlideIndex =
@@ -26,24 +32,28 @@ export default function Slider({ slides }) {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      direction.current = "normal";
-      nextSlide();
+      if (!paused) {
+        direction.current = "normal";
+        nextSlide();
+      }
     }, 5000);
     return () => {
       clearInterval(interval);
     };
   });
 
-  const hanlers = useSwipeable({
-    onSwipedLeft: () => previousSlide(),
-    onSwipedRight: () => nextSlide(),
-  });
+
 
   return (
-    <div className="slider" {...hanlers}>
+    <div className="slider" {...swipeHanlers}>
       {!!currentSlides.length &&
         currentSlides.map((slide) => (
-          <div className={`slider_slide ${direction.current}`} key={slide.id}>
+          <div
+            className={`slider_slide ${direction.current}`}
+            key={slide.id}
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
+          >
             <picture>
               <source media="(min-width:900px)" srcSet={slide.url} />
               <img
