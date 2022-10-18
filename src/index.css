@@ -18,3 +18,9 @@ code {
 a:visited {
   color:inherit;
 }
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
