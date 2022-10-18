@@ -40,10 +40,10 @@ export default function Slider({ slides }) {
   });
 
   return (
-    <div className="slider">
+    <div className="slider" {...hanlers}>
       {!!currentSlides.length &&
         currentSlides.map((slide) => (
-          <div className={`slider_slide ${direction.current}`} key={slide.id} {...hanlers}>
+          <div className={`slider_slide ${direction.current}`} key={slide.id}>
             <picture>
               <source media="(min-width:900px)" srcSet={slide.url} />
               <img

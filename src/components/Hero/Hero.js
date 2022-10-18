@@ -2,14 +2,14 @@ import Slider from '../Slider/Slider';
 
 export default function Hero() {
 
-    const slides = [
+    const slides = [    
         {
             id: 1,
             url: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80',
             mobileUrl: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80',
             title:'Welcome to us!',
             subtitle:'Take a look on our super slider',
-            buttonLink: '/',
+            buttonLink: 'https://vaitsehovskiy-tony.github.io/slider/',
             buttonText: 'Go to post',
         },
         {
@@ -18,7 +18,7 @@ export default function Hero() {
             mobileUrl: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80',
             title:'Welcome to us!',
             subtitle:'Take a look on our super slider',
-            buttonLink: '/',
+            buttonLink: 'https://vaitsehovskiy-tony.github.io/slider/',
             buttonText: 'Go to post',
         },
         {
@@ -27,7 +27,7 @@ export default function Hero() {
             mobileUrl: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80',
             title:'Welcome to us!',
             subtitle:'Take a look on our super slider',
-            buttonLink: '/',
+            buttonLink: 'https://vaitsehovskiy-tony.github.io/slider/',
             buttonText: 'Go to post',
         },
         {
@@ -36,7 +36,7 @@ export default function Hero() {
             mobileUrl: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80',
             title:'Welcome to us!',
             subtitle:'Take a look on our super slider',
-            buttonLink: '/',
+            buttonLink: 'https://vaitsehovskiy-tony.github.io/slider/',
             buttonText: 'Go to post',
         }
     ]
