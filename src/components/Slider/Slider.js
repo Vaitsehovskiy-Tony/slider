@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-// import { useSwipeable } from "react-swipeable";
+import { useSwipeable } from "react-swipeable";
 
 export default function Slider({ slides }) {
   const direction = useRef("normal");
@@ -34,11 +34,16 @@ export default function Slider({ slides }) {
     };
   });
 
+  const hanlers = useSwipeable({
+    onSwipedLeft: () => previousSlide,
+    onSwipedRight: () => nextSlide,
+  });
+
   return (
     <div className="slider">
       {!!currentSlides.length &&
         currentSlides.map((slide) => (
-          <div className={`slider_slide ${direction.current}`} key={slide.id}>
+          <div className={`slider_slide ${direction.current}`} key={slide.id} {...hanlers}>
             <picture>
               <source media="(min-width:900px)" srcSet={slide.url} />
               <img
