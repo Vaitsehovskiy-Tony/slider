@@ -35,8 +35,8 @@ export default function Slider({ slides }) {
   });
 
   const hanlers = useSwipeable({
-    onSwipedLeft: () => previousSlide,
-    onSwipedRight: () => nextSlide,
+    onSwipedLeft: () => previousSlide(),
+    onSwipedRight: () => nextSlide(),
   });
 
   return (
