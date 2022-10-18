@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Vaitsehovskiy-Tony/slider/static/css/main.cf59c5d2.css",
-    "main.js": "/Vaitsehovskiy-Tony/slider/static/js/main.407b255c.js",
-    "index.html": "/Vaitsehovskiy-Tony/slider/index.html",
-    "main.cf59c5d2.css.map": "/Vaitsehovskiy-Tony/slider/static/css/main.cf59c5d2.css.map",
-    "main.407b255c.js.map": "/Vaitsehovskiy-Tony/slider/static/js/main.407b255c.js.map"
+    "main.css": "/slider/static/css/main.cf59c5d2.css",
+    "main.js": "/slider/static/js/main.407b255c.js",
+    "index.html": "/slider/index.html",
+    "main.cf59c5d2.css.map": "/slider/static/css/main.cf59c5d2.css.map",
+    "main.407b255c.js.map": "/slider/static/js/main.407b255c.js.map"
   },
   "entrypoints": [
     "static/css/main.cf59c5d2.css",
