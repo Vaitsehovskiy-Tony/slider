@@ -39,5 +39,17 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
-  }
+  },
+  "description": "https://vaitsehovskiy-tony.github.io/slider/",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vaitsehovskiy-Tony/slider.git"
+  },
+  "author": "Anton Vaitsehovky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vaitsehovskiy-Tony/slider/issues"
+  },
+  "homepage": "https://github.com/Vaitsehovskiy-Tony/slider"
 }
