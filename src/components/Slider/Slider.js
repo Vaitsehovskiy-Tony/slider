@@ -9,18 +9,13 @@ export default function Slider({ slides }) {
 
   const currentSlides = [slides[firstSlideIndex], slides[secondSlideIndex]];
 
-  function nextSlide() {
+  const nextSlide = () => {
     direction.current = "normal";
     const nextSlideIndex =
       secondSlideIndex === slides.length - 1 ? 0 : secondSlideIndex + 1;
     setFirstSlideIndex(secondSlideIndex);
     setSecondSlideIndex(nextSlideIndex);
   }
-
-  const swipeHanlers = useSwipeable({
-    onSwipedLeft: () => nextSlide(),
-    onSwipedRight: () => previousSlide(),
-  });
 
   const previousSlide = () => {
     direction.current = "reverse";
@@ -29,6 +24,11 @@ export default function Slider({ slides }) {
     setFirstSlideIndex(secondSlideIndex);
     setSecondSlideIndex(nextSlideIndex);
   };
+
+  const swipeHanlers = useSwipeable({
+    onSwipedLeft: () => nextSlide(),
+    onSwipedRight: () => previousSlide(),
+  });
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -41,8 +41,6 @@ export default function Slider({ slides }) {
       clearInterval(interval);
     };
   });
-
-
 
   return (
     <div className="slider" {...swipeHanlers}>
