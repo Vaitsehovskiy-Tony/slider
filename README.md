@@ -1,6 +1,6 @@
 # Source code of custom slider
 
-https://github.com/Vaitsehovskiy-Tony/slider
+https://vaitsehovskiy-tony.github.io/slider/
 
 ![2021-12-29_00-58-51](https://user-images.githubusercontent.com/54285416/196420452-21fddc89-d72f-4903-93dc-c78062174cdd.png)
 

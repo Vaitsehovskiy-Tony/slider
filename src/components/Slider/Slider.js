@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { useSwipeable } from "react-swipeable";
 
 export default function Slider({ slides }) {
   const direction = useRef("normal");
