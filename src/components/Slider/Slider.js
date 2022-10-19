@@ -67,18 +67,18 @@ export default function Slider({ slides }) {
                 {slide.buttonText}
               </a>
             </div>
-            <span
+            <button
               className="slide__arrow slide__arrow_left"
               onClick={previousSlide}
             >
               {"<"}
-            </span>
-            <span
+            </button>
+            <button
               className="slide__arrow slide__arrow_right"
               onClick={nextSlide}
             >
               {">"}
-            </span>
+            </button>
           </div>
         ))}
     </div>

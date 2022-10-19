@@ -1,0 +1,30 @@
+Build your own image slider with React and CSS in less than 200 code lines.
+Hi guys, I would like to show you my version of slider. I'll use React and CSS for this. 
+It's close enough to this realisation, but have some diffrence. Check out which one do you prefer.
+Okay, let's start coding.
+Main things I have to explain about it's mechancks.
+First how does slides flow creates. It is logical that first we open page with first slide, than after some timeout or click on navigation icon we switch our slide. But how to can go back to previous slide? Actualy here is a diffrence from realisation I told earlier. When we click on previous slide icon we still goes from first slide to the second, but second one has correct index: actual index - 1. And we use reverse animation of course. 
+Okay, let's talk about details.
+First lets make auto changing images.
+Our Hero element has some array of slides and push it to Slider.
+
+Slider has two useState Hooks and variables with two indexes of first and second slides. 
+We use them to build an array of current two slides. 
+In nextSlide function we check if this is the end of array or not, and change our states to next or to the array start.
+Finally we use useEffect hook to set delay before slide will changes.
+
+Okay, we build our array and get auto changing slides. Lets talk about CSS and JSX.
+
+We use absolutely positioned slides and keyframes with transition, to get animation, we need. 
+What is important, we don't need overflow: hidden here.
+And then we have to render all this stuff here.
+
+We have out slider container, inside of it we render each of our slides. 
+It's important to use <picture> here, because usually images in Hero Banner are big, and you don't need to use this giant images on mobile.
+Okay, we got our working slider, now lets add some functionality. I'll show you big parts of code and explain then line to line.
+
+line 5, 50: We will use useRef Hook to update variable instantly. It will keep direction of our slides and also use it as a class name.
+line 20–26: This go back function build our subsequence in reverse order.
+line 2, 28–31, 46: We will need swipeable functionality, so I add a little npm package https://www.npmjs.com/package/react-swipeable.
+line 8, 35, 52–53: On hover our animation will be paused. 
+line 70–81: Some buttons to change slides forward and backwards.
