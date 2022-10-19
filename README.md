@@ -2,7 +2,7 @@
 
 https://vaitsehovskiy-tony.github.io/slider/
 
-![2021-12-29_00-58-51](https://user-images.githubusercontent.com/54285416/196420452-21fddc89-d72f-4903-93dc-c78062174cdd.png)
+![2021-12-29_00-58-51](https://user-images.githubusercontent.com/54285416/196667596-6b657464-2545-411b-893f-2d6d04dd4290.png)
 
 ## Содержание
 
